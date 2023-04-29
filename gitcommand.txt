@@ -9,8 +9,15 @@
 - git remote add orgine .....
 - git remote add orgine mastar --force
 - git checkout -b branchname
+-git reset
 
 git config --global user.email "depak2084@gmail.com" 
 git config --global user.name "deepaksharma2084"
-test
 
+deepaksharma2084
+deepak@merry123
+
+depak2084@gmail.com
+
+token
+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
