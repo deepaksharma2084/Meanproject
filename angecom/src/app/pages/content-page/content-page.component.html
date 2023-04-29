@@ -1,0 +1,22 @@
+<app-topbar></app-topbar>
+
+<div id="wrapper" class="container">
+    <app-header></app-header>								
+    <section class="header_text sub">
+    <img class="pageBanner" src="assets/themes/images/pageBanner.png" alt="New products" >
+        <h4><span>{{pageHeading}}</span></h4>
+    </section>
+    <section class="main-content">				
+        <div class="row">				
+            <div class="span12">
+                
+				<div [innerHTML]="pateContent"></div>
+
+            </div>
+            			
+        </div>
+    </section>			
+    <app-footer></app-footer>
+</div>
+	
+   

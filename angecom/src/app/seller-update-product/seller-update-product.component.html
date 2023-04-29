@@ -1,0 +1,70 @@
+<app-topbar></app-topbar>
+<div id="wrapper" class="container">
+    <app-header></app-header>			
+    <section class="header_text sub">
+    <img class="pageBanner" src="assets/themes/images/pageBanner.png" alt="New products" >
+        <h4><span>Seller Update product</span></h4>
+    </section>			
+    <section class="main-content">	
+
+        <div class="row">
+            <div class="span3">
+            </div>
+        <div class="span6">
+            <h4 class="message_p">{{productMessage}}</h4>
+        <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)"  class="form-stacked">
+            <fieldset>
+                
+                <div class="control-group">
+                    <label class="control-label">Product Name:</label>
+                    <div class="controls">
+                        <input type="text" name="name" ngModel="{{productData?.name}}" placeholder="Enter product name" class="input-xlarge">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Product price($):</label>
+                    <div class="controls">
+                        <input type="text" name="price" ngModel="{{productData?.price}}" placeholder="Product price" class="input-xlarge">
+                    </div>
+                </div>	
+                <!-- <div class="control-group">
+                    <label class="control-label">Product color:</label>
+                    <div class="controls">
+                        <input type="text" name="color" ngModel="{{productData?.color}}" placeholder="Product color" class="input-xlarge">
+                    </div>
+                </div>	
+
+                <div class="control-group">
+                    <label class="control-label">Product Category:</label>
+                    <div class="controls">
+                        <input type="text" name="category" ngModel="{{productData?.category}}" placeholder="Product color" class="input-xlarge">
+                    </div>
+                </div>	 -->
+
+                <div class="control-group">
+                    <label class="control-label">Product Description:</label>
+                    <div class="controls">
+                        <textarea cols="25" rows="10" name="description" ngModel="{{productData?.description}}"></textarea>
+                    </div>
+                </div>
+
+                <!-- <div class="control-group">
+                    <label class="control-label">Product image:</label>
+                    <div class="controls">
+                        <input type="text" name="image" ngModel="{{productData?.image}}" placeholder="Product image" class="input-xlarge">
+                    </div>
+                </div> -->
+              
+                <button class="actions"  class="btn btn-inverse large">Update product</button>
+                <br>
+                <br>
+                
+            </fieldset>
+        </form>	 
+        </div>
+
+        <div class="span3"></div>
+        </div>
+    </section>			
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,245 @@
+{
+  "seller": [
+    {
+      "name": "Mohan sharma",
+      "email": "mohan@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "Ram sharma",
+      "email": "ram@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "username": "ajay",
+      "email": "ajay@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "username": "Amy",
+      "email": "amy@gmail.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "username": "keli",
+      "email": "keli@gmail.com",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "username": "ani",
+      "email": "ani@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "username": "ajay",
+      "email": "ajay@gmai.com",
+      "password": "12345",
+      "id": 7
+    },
+    {
+      "username": "sendi",
+      "email": "sendi@gmail.com",
+      "password": "12345",
+      "id": 8
+    },
+    {
+      "username": "rami",
+      "email": "rami@gmail.com",
+      "password": "12345",
+      "id": 9
+    },
+    {
+      "username": "anim",
+      "email": "anim@gmail.com",
+      "password": "12345",
+      "id": 10
+    },
+    {
+      "username": "bemi",
+      "email": "bemi@gmail.com",
+      "password": "123456",
+      "id": 11
+    },
+    {
+      "username": "bali",
+      "email": "bali@gmail.com",
+      "password": "12345",
+      "id": 12
+    },
+    {
+      "username": "animd",
+      "email": "animd@gmail.com",
+      "password": "123456",
+      "id": 13
+    }
+  ],
+  "products": [
+    {
+      "name": "UT WISI ENIM AD",
+      "price": "17.25",
+      "color": "red",
+      "category": "cloth",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ",
+      "image": "http://localhost:4200/assets/themes/images/ladies/1.jpg",
+      "id": 1
+    },
+    {
+      "name": "Girl Scurt",
+      "price": "32.50",
+      "color": "white",
+      "category": "cloth",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ",
+      "image": "http://localhost:4200/assets/themes/images/ladies/2.jpg",
+      "id": 2
+    },
+    {
+      "name": "Long scurt",
+      "price": "14.20",
+      "color": "white",
+      "category": "cloth",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ",
+      "image": "http://localhost:4200/assets/themes/images/ladies/3.jpg",
+      "id": 3
+    },
+    {
+      "name": "YOU THINK FAST",
+      "price": "31.45",
+      "color": "red",
+      "category": "cloth",
+      "description": "World once Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ",
+      "image": "http://localhost:4200/assets/themes/images/ladies/4.jpg",
+      "id": 4
+    },
+    {
+      "name": "Long scirt",
+      "price": "25.50",
+      "color": "red",
+      "category": "cloth",
+      "description": "Commodo consequat",
+      "image": "http://localhost:4200/assets/themes/images/cloth/bootstrap-women-ware2.jpg",
+      "id": 5
+    },
+    {
+      "name": "QUIS NOSTRUD EXERCI TATION",
+      "price": "17.55",
+      "color": "red",
+      "category": "cloth",
+      "description": "Quis nostrud",
+      "image": "http://localhost:4200/assets/themes/images/cloth/bootstrap-women-ware1.jpg",
+      "id": 6
+    },
+    {
+      "name": "KNOW EXACTLY TURNED",
+      "price": "10.25",
+      "color": "white",
+      "category": "25.30",
+      "description": "Quis nostrud",
+      "image": "http://localhost:4200/assets/themes/images/cloth/bootstrap-women-ware6.jpg",
+      "id": 7
+    },
+    {
+      "name": "Long scurt",
+      "price": "25.60",
+      "color": "red",
+      "category": "cloth",
+      "description": "World once",
+      "image": "http://localhost:4200/assets/themes/images/cloth/bootstrap-women-ware5.jpg",
+      "id": 8
+    },
+    {
+      "name": "UT WISI ENIM AD",
+      "price": "17.25",
+      "color": "white",
+      "category": "cloth",
+      "description": "Quis nostrud",
+      "image": "http://localhost:4200/assets/themes/images/ladies/1.jpg",
+      "id": 9
+    }
+  ],
+  "users": [
+    {
+      "username": "anil",
+      "email": "anil@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "username": "anita",
+      "email": "anita@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "username": "Abhilasha",
+      "email": "abilasha@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "username": "ankita",
+      "email": "ankita@gmail.com",
+      "password": "123456",
+      "id": 4
+    }
+  ],
+  "cart": [
+    {
+      "creator_id": "1",
+      "name": "Polka Dot Peach Jumpsuit",
+      "price": "500",
+      "short_description": "Lorem Ipsum has been the industry's standard dummy",
+      "description": "<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>",
+      "type": "girlscloth",
+      "slug": "polka-dot-peach-jumpsuit",
+      "image": "https://bsaswm.com/reactdemo/uploads/product_images/1680455339.jpg",
+      "download_content": null,
+      "status": "1",
+      "created_at": "2023-04-02T17:08:59.000000Z",
+      "updated_at": "2023-04-02T17:08:59.000000Z",
+      "quantity": 1,
+      "userId": 26,
+      "productId": 38,
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "email": "anil@gmail.com",
+      "address": "sec 3 partap nagar",
+      "contact": "7698569854",
+      "totalPrice": 174.05,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "anil@gmail.com",
+      "address": "sec 3",
+      "contact": "7698569854",
+      "totalPrice": 346.65,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "email": "anil@gmail.com",
+      "address": "sec 3",
+      "contact": "7698569854",
+      "totalPrice": 346.65,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "email": "anil@gmail.com",
+      "address": "sec 3",
+      "contact": "7698569854",
+      "totalPrice": 346.65,
+      "userId": 1,
+      "id": 11
+    }
+  ]
+}

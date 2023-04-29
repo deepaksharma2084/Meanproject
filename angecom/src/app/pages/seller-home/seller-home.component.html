@@ -1,0 +1,56 @@
+		
+	<app-topbar></app-topbar>
+    <div id="wrapper" class="container">
+        <app-header></app-header>			
+        <section class="header_text sub">
+        <img class="pageBanner" src="assets/themes/images/pageBanner.png" alt="New products" >
+            <h4><span>Seller Dashboard</span></h4>
+        </section>			
+        <section class="main-content">	
+            <div class="row">
+                <div class="span2">
+                </div>
+
+                <div class="span8">
+                      <p class="message_p">{{productMessage}}</p>
+                    <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <!-- <th scope="col">Color</th> -->
+                            <!-- <th scope="col">Category</th> -->
+                            <!-- <th scope="col">Discription</th> -->
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                          <tr *ngFor="let iteam of productList">
+                            <th scope="row">{{iteam.id}}</th>
+                            <td><a routerLink="/product/info/{{iteam.id}}"><img src="{{iteam.image}}" height="100" width="100"></a></td>
+                            <td>{{iteam.name}}</td>
+                            <td>${{iteam.price}}</td>
+                            <!-- <td>{{iteam.color}}</td> -->
+                            <!-- <td>{{iteam.category}}</td> -->
+                            <!-- <td>{{iteam.description | slice:0:100}}</td> -->
+                            <td><fa-icon style="cursor: pointer;" (click)="deleteProudct(iteam.id)" [icon]="trashIcon"></fa-icon>  
+                               &nbsp; <a routerLink="/seller-update-product/{{iteam.id}}"><fa-icon style="cursor: pointer;"  [icon]="editIcon"></fa-icon> </a>
+                            </td>
+                           
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="span2">
+                </div>
+                
+            </div>
+            
+        </section>			
+        <app-footer></app-footer>
+    </div>

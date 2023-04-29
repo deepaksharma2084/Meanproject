@@ -1,0 +1,41 @@
+<app-topbar></app-topbar>
+<div id="wrapper" class="container">
+    <app-header></app-header>				
+    <section class="header_text sub">
+    <img class="pageBanner" src="assets/themes/images/pageBanner.png" alt="New products" >
+        <h4><span>My Orders</span></h4>
+    </section>
+    <section class="main-content">				
+        <div class="row">
+            <div class="span9">					
+                <h4 class="title"><span class="text"><strong>My</strong> Orders</span></h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th></th>
+                            <th>Order Id</th>
+                            <th>Total </th>
+                            <th>Status</th> 
+                            <th>action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let order of orderData;let i = index">
+                            <td>#{{i+1}}</td>
+                            <td><img height="50" width="50" src="https://prod4-sprcdn-assets.sprinklr.com/200052/4c9025d6-2514-4045-9fd9-a9589ac70c5d-258997166/svgviewer-png-output_(6).png"></td>
+                            <td>#{{order.id}}</td>
+                            <td>${{order.totalPrice | number : '1.2-2'}}</td>
+                            <td>Inprocess</td>
+                            <td><button (click)="cancelorder(order.id)">Cancel Order</button></td>
+                        </tr>			  
+                       		  
+                    </tbody>
+                </table>
+                					
+            </div>
+           
+        </div>
+    </section>			
+    <app-footer></app-footer>
+</div>

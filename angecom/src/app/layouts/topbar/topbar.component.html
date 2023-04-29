@@ -1,0 +1,39 @@
+<div id="top-bar" class="container">
+    <div class="row">
+      <div class="span4">
+       <!--  <form method="POST" class="search_form">
+          <input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
+        </form> -->
+      </div>
+      <div class="span8">
+        <div class="account pull-right">
+        <div [ngSwitch]="menuType">
+          <ul *ngSwitchCase="'default'" class="user-menu">				
+            <!-- <li><a href="#">My Account</a></li> -->
+            <li><a routerLink="/cart">Cart ({{cartItems}})</a></li>
+            <li><a routerLink="/checkout">Checkout</a></li>					
+            <li><a routerLink="/user-auth">Login / Signup</a></li>		
+            <li><a routerLink="/seller-auth">Seller</a></li>	
+          </ul>
+
+          <ul *ngSwitchCase="'user'" class="user-menu">				
+            <!-- <li><a href="#">My Account</a></li> -->
+            <li><a [routerLink]="cartItems>0?'/cart':null">Cart ({{cartItems}})</a></li>
+            <li><a routerLink="/my-orders">My orders</a></li>					
+            <li><a class="cursorPonter" (click)="userLogout()">Logout</a></li>		
+            <li><a routerLink="/">Hi, {{userName | titlecase}}</a></li>	
+          </ul>
+
+          <ul *ngSwitchCase="'seller'" class="user-menu">				
+            <!-- <li><a href="#">My Account</a></li> -->
+            <li><a routerLink="/seller-home">Product List</a></li>
+            <li><a routerLink="/seller-add-product">Add product</a></li>					
+            <li><a class="cursorPonter" (click)="sellerLogout()">Logout</a></li>		
+            <li><a routerLink="/seller-auth">Hi, {{sellerName | titlecase}}</a></li>	
+          </ul>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

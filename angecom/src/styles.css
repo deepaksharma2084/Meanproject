@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+.errorshow{
+
+    color: red;
+    font-size: 14px;
+}
+
+.invalid-input{
+    color: red;
+    font-size: 12px;
+  
+}
+button:disabled{
+
+    cursor: not-allowed;
+}

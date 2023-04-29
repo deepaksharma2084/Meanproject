@@ -1,0 +1,58 @@
+<app-topbar></app-topbar>
+<div id="wrapper" class="container">
+    <app-header></app-header>				
+    <section class="header_text sub">
+    <img class="pageBanner" src="assets/themes/images/pageBanner.png" alt="New products" >
+        <h4><span>Shopping Cart</span></h4>
+    </section>
+    <section class="main-content">				
+        <div class="row">
+            <div class="span9">					
+                <h4 class="title"><span class="text"><strong>Your</strong> Cart</span></h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th> 
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let cart of cartData">
+                        <tr *ngIf="cart.id">
+                            <td><a href="product_detail.html"><img alt="" src="{{cart.image}}" height="100" width="100"></a></td>
+                            <td>{{cart.name}}</td>
+                            <td>{{cart.quantity}}</td>
+                            <td>${{cart.price}}</td>
+                            <td>${{cart.quantity && cart.price*cart.quantity | number : '1.2-2'}}</td>
+                            <td><button  (click)="removeFromCart(cart.id)">Remove to cart</button></td>
+                        </tr>			  
+                       		  
+                    </tbody>
+                </table>
+                					
+            </div>
+            <div class="span3 col">
+                <div class="block">	
+                    <br>
+                    <h4>Summary</h4>
+                <p class="cart-total left">
+                    <strong>Sub-Total</strong>: &nbsp;&nbsp;&nbsp;&nbsp; 	${{priceSummary.price | number : '1.2-2'}}<br>
+                    <strong>Tax(Fixed)</strong>:  &nbsp;&nbsp;&nbsp;   ${{priceSummary.tax | number : '1.2-2'}}<br>
+                    <strong>Total</strong>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   <strong>${{priceSummary.total | number : '1.2-2'}}</strong><br>
+                </p>
+                <hr/>
+                <p class="buttons center">				
+                    <!-- <button class="btn" type="button">Update</button>
+                    <button class="btn" type="button">Continue</button> -->
+                    <a class="btn btn-inverse" routerLink="/checkout" >Checkout</a>
+                </p>
+                </div>
+               						
+            </div>
+        </div>
+    </section>			
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,86 @@
+		
+	<app-topbar></app-topbar>
+    <div id="wrapper" class="container">
+        <app-header></app-header>			
+        <section class="header_text sub">
+        <img class="pageBanner" src="assets/themes/images/pageBanner.png" alt="New products" >
+            <h4><span>Login or Regsiter</span></h4>
+        </section>			
+        <section class="main-content">				
+            <div class="row">
+                <div class="span4">					
+                			
+                </div>
+                <div  class="span7">	
+                   <div  *ngIf="!showLogin">
+                    <h4 class="title"><span class="text"><strong>Seller Register</strong> Form</span></h4>
+                    <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)"  class="form-stacked">
+                        <fieldset>
+                            <div class="control-group">
+                                <label class="control-label">Username</label>
+                                <div class="controls">
+                                    <input type="text"  name="username" ngModel placeholder="Enter your username" class="input-xlarge">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Email address:</label>
+                                <div class="controls">
+                                    <input type="text" name="email" ngModel placeholder="Enter your email" class="input-xlarge">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Password:</label>
+                                <div class="controls">
+                                    <input type="password" name="password" ngModel placeholder="Enter your password" class="input-xlarge">
+                                </div>
+                            </div>							                            
+                           
+                            <button class="actions"  class="btn btn-inverse large">SignUp</button>
+                            <br>
+                            <br>
+                            <a (click)="openLogin()" >Already have account? Click to login</a>
+                        </fieldset>
+                    </form>		
+                </div>
+
+
+                    <!-- Login section -->
+                    <div  *ngIf="showLogin">
+                    <h4 class="title"><span class="text"><strong>Seller Login</strong> Form</span></h4>
+                    <p class="errorshow">{{authError}}</p>
+                    <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)"  class="form-stacked">
+                        <fieldset>
+                            
+                            <div class="control-group">
+                                <label class="control-label">Email address:</label>
+                                <div class="controls">
+                                    <input type="text" name="email" ngModel placeholder="Enter your email" class="input-xlarge">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Password:</label>
+                                <div class="controls">
+                                    <input type="password" name="password" ngModel placeholder="Enter your password" class="input-xlarge">
+                                </div>
+                            </div>							                            
+                          
+                            <button class="actions"  class="btn btn-inverse large">Login</button>
+                            <br>
+                            <br>
+                            <a (click)="openSignUp()" >Don't have account? Click to SignUP</a>
+                        </fieldset>
+                    </form>	
+                </div>
+
+
+
+
+                </div>	
+                
+                <div class="span1">					
+                			
+                </div>
+            </div>
+        </section>			
+        <app-footer></app-footer>
+    </div>
